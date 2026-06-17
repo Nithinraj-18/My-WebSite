@@ -1,0 +1,25 @@
+<nav class="navbar">
+
+    <div class="logo">
+        <span>Designing</span>
+        <span>Developing</span>
+        <span>Delivering</span>
+    </div>
+
+    <button class="menu-btn" (click)="toggleMenu()">
+        ☰
+    </button>
+
+    <div class="nav-links" [class.active]="menuOpen">
+
+        <a href="#home" (click)="closeMenu()">Home</a>
+
+        <a href="#services" (click)="closeMenu()">Services</a>
+
+        <a href="#portfolio" (click)="closeMenu()">Portfolio</a>
+
+        <a href="#contact" (click)="closeMenu()">Contact</a>
+
+    </div>
+
+</nav>
